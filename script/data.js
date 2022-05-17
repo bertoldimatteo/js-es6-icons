@@ -119,7 +119,6 @@ const animals = [
 
 const container = document.querySelector("#container");
 const tplCardHTML = document.querySelector("#tpl-card").content;
-const iconHTML = document.querySelector(".icon");
 
 for ( let i = 0; i < animals.length; i++) {
 	const cardHTML = tplCardHTML.cloneNode(true);
@@ -127,9 +126,9 @@ for ( let i = 0; i < animals.length; i++) {
 	cardHTML.querySelector(".icon-name").innerHTML = name;
 
 	const icon = document.createElement("i");
-	icon.classList.add(family, prefix,name);
+	icon.classList.add(family, prefix + name);
 	
-	console.log(icon);
+	cardHTML.querySelector(".icon").append(icon);
 
 	container.append(cardHTML);
 }
