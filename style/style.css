@@ -7,6 +7,7 @@
     display: flex;
     padding: 20px;
     flex-wrap: wrap;
+    gap: 10px;
 }
 .box {
     display: flex;
@@ -16,5 +17,5 @@
     width: 250px;
     height: 130px;
     border-radius: 15px;
-    background-color: aqua;
+    background-color: lightgray;
 }
