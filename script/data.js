@@ -132,6 +132,7 @@ for ( let i = 0; i < animals.length; i++) {
 	cardHTML.querySelector(".icon").append(icon);
 
 	container.append(cardHTML);
+
 }
 
 // Milestone 2
@@ -146,5 +147,7 @@ for ( let i = 0; i < animals.length; i++) {
 
 const select = document.querySelector(".select");
 select.addEventListener("change", function(){
-	const AnimalIcons = animals.filter((elm) => elm.type === this.value);
-});
+	const userChoice = this.value;
+	console.log(userChoice);
+	}
+);
