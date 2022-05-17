@@ -1,4 +1,4 @@
-[
+const animals = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,3 +112,17 @@
 		color: 'blue'
 	}
 ];
+
+// Milestone 1
+// Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, 
+// in cui è presente il nome dell'icona e l'icona stessa.
+
+// creo collegamento con il container
+const cardHTML = document.getElementById("container");
+
+// creo function per replica card dentro html con proprietà dell'oggetto nell'array
+function innerCard(container, card) {
+
+	const box = document.getElementById("card").content.cloneNode(true);
+	console.log(box);
+}
