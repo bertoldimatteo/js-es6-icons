@@ -117,16 +117,12 @@ const animals = [
 // Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, 
 // in cui è presente il nome dell'icona e l'icona stessa.
 
-
-function printCard (container, animal) {
-
-
-	const cardHTML = document.querySelector("#card").content.cloneNode(true);
-	container.append(cardHTML);
-}
-
-const containerHTML = document.querySelector(".container");
+const container = document.querySelector("#container");
+const tplCardHTML = document.querySelector("#tpl-card").content;
 
 for ( let i = 0; i < animals.length; i++) {
-	printCard(containerHTML, animals[i]);
+	const cardHTML = tplCardHTML.cloneNode(true);
+	const {name, prefix, type, family, color} = animals[i];
+	cardHTML.querySelector(".icon-name").innerHTML = name;
+	container.append(cardHTML);
 }
