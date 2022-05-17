@@ -124,7 +124,6 @@ const cardHTML = document.getElementById("container");
 function innerCard(container, card) {
 
 	const box = document.getElementById("card").content.cloneNode(true);
-	box.querySelector(".icon-name").innerHTML = animals.name;
 }
 
 for ( let i = 0; i < animals.length; i++) {
