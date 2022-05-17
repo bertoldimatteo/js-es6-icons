@@ -127,6 +127,7 @@ for ( let i = 0; i < animals.length; i++) {
 
 	const icon = document.createElement("i");
 	icon.classList.add(family, prefix + name);
+	icon.style.color = color;
 	
 	cardHTML.querySelector(".icon").append(icon);
 
