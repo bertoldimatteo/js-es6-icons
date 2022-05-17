@@ -124,5 +124,9 @@ const cardHTML = document.getElementById("container");
 function innerCard(container, card) {
 
 	const box = document.getElementById("card").content.cloneNode(true);
-	console.log(box);
+	box.querySelector(".icon-name").innerHTML = animals.name;
+}
+
+for ( let i = 0; i < animals.length; i++) {
+	innerCard(cardHTML, animals[i]);
 }
