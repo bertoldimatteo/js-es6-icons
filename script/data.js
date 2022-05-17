@@ -143,3 +143,8 @@ for ( let i = 0; i < animals.length; i++) {
 // le options corrispondono ai vari tipi di icone (animal, vegetable, user). Quando 
 // l'utente seleziona un tipo dalla select, 
 // visualizzare solamente le icone corrispondenti.
+
+const select = document.querySelector(".select");
+select.addEventListener("change", function(){
+	const AnimalIcons = animals.filter((elm) => elm.type === this.value);
+});
